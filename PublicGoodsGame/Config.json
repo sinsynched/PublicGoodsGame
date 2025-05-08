@@ -1,0 +1,37 @@
+{
+  "Network": {
+    "LoadNetwork": false,
+    "_comment1": "Network Types -> 0: SquareLattice, 1: Erdos-Renyi, 2: RingGraph, 3: BarabasiAlbert, 4: TriangularLattice, 5: Honeycomb",
+    "NetworkType": 0,
+    "ErdosRenyiProbability": 0.0004,
+    "NodesCount": 10000,
+    "_comment2": "For square lattice you need to set this, program will ignore NodesCount",
+    "LatticeLength": 100,
+    "RingGraphDegree": 4,
+    "Rewiring": false,
+    "_comment3": "Rewiring Types -> 0: SquareLattice, 1: RingGraph, 2: Regular",
+    "RewiringType": 1,
+    "PortionOfLinksToRewire": 1,
+    "RewiringProbability": 0.1
+  },
+  "PGGDynamicModel": {
+    "WithLoners": true,
+    "WithSatisfaction": false,
+    "SatisfactionUpdateProbability": 1,
+    "EnhancementRange": true,
+    "EnhancementFactor": 3.8,
+    "MaxEnhancementFactor": 4.52,
+    "RepetitionsCount": 10,
+    "MinMCS": 10000,
+    "StepsToAverageOver": 5000,
+    "K": 0.5,
+    "EnhancementFactorTick": 0.1,
+    "_comment": "[ 0, 0 ] for no minor ticks",
+    "MinorEnhancementFactorTickInterval": [ 0, 0 ],
+    "MinorEnhancementFactorTick": 0.02,
+    "MaxMCS": 100000,
+    "ContributionCost": 1,
+    "LonerPayoff": 1,
+    "StandardDeviationValue": 0.05
+  }
+}
